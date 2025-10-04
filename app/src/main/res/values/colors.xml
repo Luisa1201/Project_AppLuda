@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Colores principales de LUDA -->
+    <color name="luda_bg_start">#C5FEFE</color>
+    <color name="luda_bg_end">#C5FEFE</color>
+    <color name="luda_primary">#6BB6D6</color>
+    <color name="luda_button">#B2D4E9</color>
+    <color name="luda_text_dark">#2C3E50</color>
+    <color name="luda_text_medium">#979BA4</color>
+    <color name="black">#233133</color>
+    <color name="card_bg">#B2D4E9</color>
+    <color name="transparent">#00000000</color>
+    <color name="fields_background">#FFFFFF</color>
+</resources>
