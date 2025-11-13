@@ -1,222 +1,219 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/bg_gradient"
-    android:padding="24dp"
-    tools:context=".HomeActivity">
+    android:fillViewport="true">
 
-    <!-- Header -->
-
-    <!-- Card: Actividades de apoyo -->
-
-    <!-- Card: Diario Personal -->
-
-    <!-- Header -->
-
-    <LinearLayout
-        android:id="@+id/headerContainer"
-        android:layout_width="wrap_content"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="12dp"
-        android:layout_marginTop="4dp"
-        android:gravity="center_vertical"
-        android:orientation="horizontal"
-        android:padding="7dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        android:padding="24dp"
+        tools:context=".HomeActivity">
 
-        <!-- Imagen (logo) -->
-        <ImageView
-            android:id="@+id/imgLogo"
-            android:layout_width="45dp"
-            android:layout_height="45dp"
-            android:src="@drawable/ic_mental" />
-
-        <!-- Texto LUDA -->
-        <TextView
-            android:id="@+id/tvHeader"
+        <!-- Header -->
+        <LinearLayout
+            android:id="@+id/headerContainer"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:text="@string/app_name"
-            android:textColor="@color/luda_text_dark"
-            android:textSize="35sp"
-            android:textStyle="bold" />
-    </LinearLayout>
-
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/cardSupport"
-        android:layout_width="334dp"
-        android:layout_height="170dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="8dp"
-        android:background="@drawable/bg_cardd"
-        android:clickable="true"
-        android:focusable="true"
-        android:padding="16dp"
-        app:layout_constraintBottom_toTopOf="@id/cardDiary"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.551"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/headerContainer">
-
-        <TextView
-            android:layout_width="142dp"
-            android:layout_height="130dp"
-            android:layout_marginEnd="16dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="4dp"
             android:gravity="center_vertical"
-            android:text="@string/support_activities"
-            android:textColor="@color/luda_text_dark"
-            android:textSize="25sp"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@id/iconSupport"
-            app:layout_constraintHorizontal_bias="0.441"
+            android:orientation="horizontal"
+            android:padding="7dp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent">
 
-        <ImageView
-            android:id="@+id/iconSupport"
-            android:layout_width="115dp"
-            android:layout_height="120dp"
-            android:layout_marginEnd="10dp"
-            android:src="@drawable/ic_support_activities"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-    </androidx.constraintlayout.widget.ConstraintLayout>
+            <!-- Imagen (logo) -->
+            <ImageView
+                android:id="@+id/imgLogo"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:src="@drawable/ic_mental" />
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/cardDiary"
-        android:layout_width="334dp"
-        android:layout_height="170dp"
-        android:layout_marginTop="7dp"
-        android:layout_marginBottom="8dp"
-        android:background="@drawable/bg_cardd"
-        android:clickable="true"
-        android:focusable="true"
-        android:padding="16dp"
-        app:layout_constraintBottom_toTopOf="@id/cardAppointments"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/cardSupport">
+            <!-- Texto LUDA -->
+            <TextView
+                android:id="@+id/tvHeader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@string/app_name"
+                android:textColor="@color/luda_text_dark"
+                android:textSize="35sp"
+                android:textStyle="bold" />
+        </LinearLayout>
 
-        <TextView
-            android:layout_width="142dp"
-            android:layout_height="130dp"
-            android:layout_marginEnd="16dp"
-            android:gravity="center_vertical"
-            android:text="@string/personal_diary"
-            android:textColor="@color/luda_text_dark"
-            android:textSize="25sp"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@id/iconDiary"
-            app:layout_constraintHorizontal_bias="0.789"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.0" />
-
-        <ImageView
-            android:id="@+id/iconDiary"
-            android:layout_width="115dp"
-            android:layout_height="120dp"
-            android:layout_marginEnd="10dp"
-            android:src="@drawable/ic_agenda"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
-    <!-- Card: Reservas de citas -->
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/cardAppointments"
-        android:layout_width="334dp"
-        android:layout_height="170dp"
-        android:layout_marginTop="7dp"
-        android:layout_marginBottom="8dp"
-        android:background="@drawable/bg_cardd"
-        android:clickable="true"
-        android:focusable="true"
-        android:padding="16dp"
-        app:layout_constraintBottom_toTopOf="@id/cardTests"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/cardDiary">
-
-        <TextView
-            android:layout_width="133dp"
-            android:layout_height="115dp"
-            android:layout_marginEnd="16dp"
-            android:gravity="center_vertical"
-            android:text="@string/appointments"
-            android:textColor="@color/luda_text_dark"
-            android:textSize="25sp"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@id/iconAppointments"
-            app:layout_constraintHorizontal_bias="0.302"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.521" />
-
-        <ImageView
-            android:id="@+id/iconAppointments"
-            android:layout_width="115dp"
-            android:layout_height="120dp"
-            android:layout_marginEnd="10dp"
-            android:src="@drawable/ic_calendar"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
-    <!-- Card: Tests -->
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/cardTests"
-        android:layout_width="334dp"
-        android:layout_height="170dp"
-        android:layout_marginTop="7dp"
-        android:background="@drawable/bg_cardd"
-        android:clickable="true"
-        android:focusable="true"
-        android:padding="16dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.551"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/cardAppointments">
-
-        <TextView
-            android:layout_width="104dp"
-            android:layout_height="36dp"
-            android:layout_marginEnd="16dp"
+        <!-- Card: Actividades de apoyo -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cardSupport"
+            android:layout_width="334dp"
+            android:layout_height="163dp"
+            android:layout_marginTop="10dp"
             android:background="@drawable/bg_cardd"
-            android:gravity="center_vertical"
-            android:text="@string/tests"
-            android:textColor="@color/luda_text_dark"
-            android:textSize="25sp"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@id/iconTests"
-            app:layout_constraintHorizontal_bias="0.338"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <ImageView
-            android:id="@+id/iconTests"
-            android:layout_width="115dp"
-            android:layout_height="120dp"
-            android:layout_marginEnd="8dp"
-            android:src="@drawable/ic_test"
-            app:layout_constraintBottom_toBottomOf="parent"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="16dp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.0" />
+            app:layout_constraintHorizontal_bias="0.551"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/headerContainer">
+
+            <TextView
+                android:layout_width="142dp"
+                android:layout_height="130dp"
+                android:layout_marginEnd="16dp"
+                android:gravity="center_vertical"
+                android:text="@string/support_activities"
+                android:textColor="@color/luda_text_dark"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/iconSupport"
+                app:layout_constraintHorizontal_bias="0.441"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/iconSupport"
+                android:layout_width="115dp"
+                android:layout_height="120dp"
+                android:layout_marginEnd="10dp"
+                android:src="@drawable/ic_support_activities"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <!-- Card: Diario Personal -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cardDiary"
+            android:layout_width="334dp"
+            android:layout_height="163dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/bg_cardd"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cardSupport">
+
+            <TextView
+                android:layout_width="142dp"
+                android:layout_height="130dp"
+                android:layout_marginEnd="16dp"
+                android:gravity="center_vertical"
+                android:text="@string/personal_diary"
+                android:textColor="@color/luda_text_dark"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/iconDiary"
+                app:layout_constraintHorizontal_bias="0.789"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <ImageView
+                android:id="@+id/iconDiary"
+                android:layout_width="115dp"
+                android:layout_height="120dp"
+                android:layout_marginEnd="10dp"
+                android:src="@drawable/ic_agenda"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <!-- Card: Reservas de citas -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cardAppointments"
+            android:layout_width="334dp"
+            android:layout_height="170dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/bg_cardd"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cardDiary">
+
+            <TextView
+                android:layout_width="133dp"
+                android:layout_height="115dp"
+                android:layout_marginEnd="16dp"
+                android:gravity="center_vertical"
+                android:text="@string/appointments"
+                android:textColor="@color/luda_text_dark"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/iconAppointments"
+                app:layout_constraintHorizontal_bias="0.302"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.521" />
+
+            <ImageView
+                android:id="@+id/iconAppointments"
+                android:layout_width="115dp"
+                android:layout_height="120dp"
+                android:layout_marginEnd="10dp"
+                android:src="@drawable/ic_calendar"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <!-- Card: Tests -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cardTests"
+            android:layout_width="334dp"
+            android:layout_height="170dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginBottom="24dp"
+            android:background="@drawable/bg_cardd"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.551"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cardAppointments">
+
+            <TextView
+                android:layout_width="104dp"
+                android:layout_height="36dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/bg_cardd"
+                android:gravity="center_vertical"
+                android:text="@string/tests"
+                android:textColor="@color/luda_text_dark"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/iconTests"
+                app:layout_constraintHorizontal_bias="0.338"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/iconTests"
+                android:layout_width="115dp"
+                android:layout_height="120dp"
+                android:layout_marginEnd="8dp"
+                android:src="@drawable/ic_test"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

@@ -39,4 +39,8 @@
     <string name="sleep_management">Gestión del Sueño</string>
     <string name="virtual_companions">Compañeros virtuales</string>
 
+    <string name="action_profile">Perfil</string>
+    <string name="action_logout">Cerrar Sesión</string>
+
+
 </resources>

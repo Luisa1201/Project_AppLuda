@@ -14,8 +14,8 @@
 
     <ImageView
         android:id="@+id/ivProfile"
-        android:layout_width="300dp"
-        android:layout_height="300dp"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
         android:layout_marginTop="132dp"
         android:background="@drawable/bg_card"
         android:padding="15dp"
@@ -32,7 +32,7 @@
         android:id="@+id/tvWelcome"
         android:layout_width="294dp"
         android:layout_height="104dp"
-        android:layout_marginTop="76dp"
+        android:layout_marginTop="48dp"
         android:text="@string/welcome_title"
         android:textAlignment="center"
         android:textColor="@color/luda_text_dark"
@@ -47,7 +47,7 @@
         android:id="@+id/btnStart"
         android:layout_width="272dp"
         android:layout_height="62dp"
-        android:layout_marginBottom="104dp"
+        android:layout_marginBottom="100dp"
         android:background="@drawable/bg_button"
         android:text="@string/start_button"
         android:textColor="@color/black"
